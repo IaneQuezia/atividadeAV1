@@ -1,0 +1,358 @@
+
+/* Estilos gerais para todos os dispositivos */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #70c7bf;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: auto;
+    margin: auto;
+    gap: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Adicionado margem negativa para compensar o espaçamento nos elementos filhos */
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#pag01, #pag02, #pag03, #pag04, #pag05, #pag06{
+    min-width: 100vw;
+    max-width: fit-content;
+    min-height: 100vh;
+    max-height: fit-content;
+    background-color: #70c7bf;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    margin: auto;
+}
+
+#titulo{
+    padding: 5%;
+}
+
+
+/* Estilos específicos para dispositivos menores (mobile) */
+@media (max-width: 767px) {
+    .cta_input, .cta_botao {
+        width: 100%; /* Faça com que os inputs e botões ocupem 100% da largura disponível */
+    }
+}
+
+
+/* PRIMEIRA PÁGINA */
+
+#pag01{
+    background-image: url(./media/fundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    padding: 5vh;
+}
+
+#texto{
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+}
+
+#fundo-texto{
+    background-color: rgba(112,199,191,0.9);
+    padding: 50px;
+    border-radius: 8px;
+}
+
+#campos{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#cta_input{
+    background-color: #fff;
+    color: #70c7bf;
+    width: 40rem;
+    height: 4rem;
+    padding: 10px;
+    border: 1px solid rgba(112,199,191,0.8);
+    border-radius: 8px;
+}
+
+#cta_botao{
+    background-color: #fff;
+    color: #70c7bf;
+    width: 20rem;
+    min-width: fit-content;
+    height: 4rem;
+    border: 1px solid  rgba(112,199,191,0.8);
+    border-radius: 8px;
+}
+
+h5{
+    padding: 8px;
+}
+
+#icones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    gap: 5vw;
+    padding: 20px 30px;
+    margin-bottom: 10vh;
+}
+
+#icones-botao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    min-width: 15vw;
+    max-width: 20vw;
+    min-height: 5vh;
+}
+
+#botao-format{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 20px;
+    width: fit-content;
+}
+
+#logo-link{
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2px;
+    border-radius: 8px;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+
+
+/* Adaptações específicas para dispositivos menores */
+@media (max-width: 767px) {
+    #texto {
+        font-size: 18px;
+    }
+    .cta_input, .cta_botao {
+        width: 100%;
+        margin: 10px 0; /* Adicionado espaçamento entre os elementos */
+    }
+    #links {
+        gap: 20px;
+    }
+    .logo-link {
+        margin: 2px;
+    }
+    .logo-link_imagem {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+
+
+/* SEGUNDA PÁGINA */
+
+#pag02{
+    margin: auto;
+    padding: 10vh 5vw;
+    flex-direction: column;
+    gap: 8vh;
+}
+
+#tripulacao-corpo_row{
+    width: 100vw;
+}
+
+#tripulacao-corpo_col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+#tripulacao_linha{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;  
+    min-height: 30vh;
+}
+
+#logo_img{
+    background-color: #fff;
+    width: 8vw;
+    height: 8vw;
+    border: 1px solid;
+    border-radius: 50%;
+    min-width: 80px;  
+    min-height: 80px;
+}
+
+#tripulante{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#tripulacao_tripulante{
+    min-width: 33vw;
+    max-width: 50vw;
+}
+
+/* TERCEIRA PÁGINA */
+#pag03-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutus-imagem {
+    border-radius: 8px;
+}
+
+#aboutus-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* QUARTA PÁGINA */
+
+#pag04-conteudo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#resumo-texto, #resumo-video {
+    text-align: center;
+}
+
+#resumo-video video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* QUINTA PÁGINA */
+#pag05{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+}
+
+#texto-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+
+#reviews-conteudo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#reviews-usuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#usuario-comentario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-height: 300px;
+}
+
+.reviews {
+    padding: 20px; /* Reduzi o espaçamento para dispositivos menores */
+    text-align: center;
+}
+
+/* ÚLTIMA PÁGINA */
+.lastpage-cta {
+    padding: 20px; /* Reduzi o espaçamento para dispositivos menores */
+    text-align: center;
+}
+
+.cta2 {
+    gap: 10px; /* Adicionado espaçamento entre os elementos */
+}

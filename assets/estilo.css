@@ -1,0 +1,336 @@
+/* Estilos gerais */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #70c7bf;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Adicionado margem negativa para compensar o espaçamento nos elementos filhos */
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+*{
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 0;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.my-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+/* PRIMEIRA PAGINA */
+
+#pag01{
+    flex-direction: column;
+    gap: 60px;
+    background-image: url(./media/fundo.png);
+    width: 100%;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+#logo{
+    margin: 20px;
+}
+
+#texto{
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#fundo-texto{
+    flex-direction: column;
+    background-color: #70c7bf;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+#cta{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta_input{
+    background-color: #fff;
+    width: 500px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.cta_botao{
+    background-color: #70c7bf;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #62ada6;
+    border-radius: 8px;
+}
+
+#icones{
+    border-radius: 8px;
+}
+
+.logo-link_imagem{
+    width: 32px;
+    height: 32px;
+}
+
+#links{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border-radius: 8px;
+}
+
+.logo-link{
+    text-decoration: none;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 2px;
+    border-radius: 8px;
+}
+
+/* SEGUNDA PAGINA */
+
+#pag02-frame{
+    background-color: #70c7bf;
+    padding-top: 100px;
+    padding: 20px;
+}
+
+#pag02-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#tripulacao-corpo{
+    display: flex;    
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+#tripulacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#tripulacao_tripulante{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+#tripulante{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo_img{
+    background-color: #fff;
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+#tripulante_descricao{
+    flex-direction: column;
+    gap: 20px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+
+
+/* TERCEIRA PAGINA */
+
+.aboutus{
+    background-color: #70c7bf;
+    height: fit-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.my-col-aboutus{
+    margin: 50px;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.howitworks{
+    background-color: #70c7bf;
+    height: fit-content;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    border-radius: 8px;
+}
+
+.myanimelist{
+    color: #fff;
+}
+
+.usuario-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.reviews{
+    background-color: #70c7bf;
+    padding: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.lastpage-cta{
+    height: 100%;
+    background-color: #70c7bf;
+    padding: 200px;
+}
+
+.my-col-lastpage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.cta2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_botao{
+    background-color: #70c7bf;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #62ada6;
+    border-radius: 8px;
+}
+.reviews-usuarios{
+    width: 100%;
+    height: auto;
+}
+.usuario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-col-usuario{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #62ada6;
+    border-radius: 8px;
+}
+
+.my-col-reviews{
+    height: 500px;
+}
+
+#review-maxine{
+    width: 300px;
+    padding: 20px;
+    opacity: 0.6;
+}
+
+/* TERCEIRA PAGINA */
+#pag03-conteudo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#aboutus-texto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+#aboutus-imagem{
+    margin: 50px;
+    border-radius: 8px;
+}
